@@ -11,3 +11,5 @@ url: 127.0.0.1
 allowed_origins: 
 - http://127.0.0.1
 ```
+4. Build a docker image by running `docker build -t <container-name> .`
+5. Run the container by running `docker run -p 8080:8080 <container-name>`

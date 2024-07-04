@@ -23,6 +23,7 @@ WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
 COPY --from=builder /app/bin/main .
+COPY --from=builder /app/config/config.yaml ./config/config.yaml
 
 # Ensure the binary is executable
 RUN chmod +x ./main
